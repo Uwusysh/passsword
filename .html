@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        function val()
+         { var msg;
+           if(document.myform.userpass.value.length>5){
+             msg="good";}
+           else
+             {msg="poor";}
+           document.getElementById('mylocation').innerText=msg;
+         }   
+
+            
+        </script>
+        <form name="myform">
+        <input type="password" value="" name="userpass" onkeyup="val()">
+        Strength:<span id="mylocation">No strength</span>
+        </form>
+    </body>
+</html>
+
+
+
